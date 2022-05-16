@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: "Cinzel", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  background-image: url(../public/background.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-special {
+  background: rgba(0, 0, 0, 0.603);
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.603) !important;
+}
+
+.card-footer {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: none !important;
+}
