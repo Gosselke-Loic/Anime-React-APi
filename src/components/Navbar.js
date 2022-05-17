@@ -1,11 +1,11 @@
 import { Navbar, NavbarBrand, Container, Form, FormControl} from "react-bootstrap";
 import { useState } from "react";
-import { useFetch } from "../service/Service";
+import { useFetchAnime } from "../service/Service";
 
 const NavbarSearch = () => {
 
     const [searchText, setSearch] = useState("");
-    useFetch(searchText);
+    useFetchAnime(searchText);
 
     return ( 
         <Navbar className="static-top bg-special mb-5">

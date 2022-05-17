@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import Cards from "../components/Cards"
+import { Cards } from "../components/Cards";
 import { DataContext } from "../Context/DataContext";
 
 const Home = () => {
