@@ -2,6 +2,10 @@ import { Navbar, NavbarBrand, Container, Form, FormControl} from "react-bootstra
 import { useState } from "react";
 import { useFetchAnime } from "../service/Service";
 
+/**
+ * Show the title and an input Search
+ * @returns create cards from filtered results
+ */
 const NavbarSearch = () => {
 
     const [searchText, setSearch] = useState("");

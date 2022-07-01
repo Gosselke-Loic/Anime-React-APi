@@ -2,7 +2,6 @@ import Home from "./webpages/Home";
 import { DataProvider } from "./Context/DataContext";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavbarSearch from "./components/Navbar";
-import Characters from "./webpages/Characters";
 import Recomendations from "./webpages/Recomendations";
 import FooterBar from "./components/Footer";
 
@@ -16,7 +15,6 @@ function App() {
                     <div className="content">
                         <Routes>
                             <Route path="/" element={ <Home /> }/>
-                            <Route path="/Characters" element={ <Characters /> }/>
                             <Route path="/Recomendations" element={ <Recomendations /> } />
                         </Routes>
                     </div>

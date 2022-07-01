@@ -1,18 +1,17 @@
-import { useContext } from "react";
 import { CardsRecomendations } from "../components/Cards";
-import { DataContext } from "../Context/DataContext";
 import { useFetchRecomendations } from "../service/Service";
 
 const Recomendations = () => {
 
-    useFetchRecomendations("");
-    const { data, isLoading, isError } = useContext(DataContext);
-
+    //provide error if rejected request, boolean for loading and data animes
+    const {dataRecomendation, loadingRecomendation, errorRecomendation} = useFetchRecomendations();
+    
+    //check for error, show loading message waiting for render anime data
     return (
         <div className="Recomendations">
-            { isError && <div className="text-danger text-center"><h2>{ isError }</h2></div> }
-            { isLoading && <div className="text-danger text-center"><h2>Loading...</h2></div> }
-            { data && <CardsRecomendations data={data}/> }
+            { errorRecomendation && <div className="text-danger text-center"><h2>{ errorRecomendation }</h2></div> }
+            { loadingRecomendation && <div className="text-danger text-center"><h2>Loading...</h2></div> }
+            { dataRecomendation && <CardsRecomendations dataRecomendation={dataRecomendation}/> }
         </div>
     );
 }

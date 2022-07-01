@@ -1,6 +1,10 @@
 import { Navbar, Container} from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+/**
+ * footer for links router
+ * @returns jsx with the links for the router
+ */
 const FooterBar = () => {
 
     const styles = {
@@ -13,7 +17,6 @@ const FooterBar = () => {
         <Navbar className="fixed-bottom bg-special d-flex justify-content-between">
             <Container fluid>
             <Link style={styles} to="/">Home</Link>
-            <Link style={styles} to="/Characters">Characters</Link>
             <Link style={styles} to="/Recomendations">Recomendations</Link>
             </Container>
         </Navbar>
